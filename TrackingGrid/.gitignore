@@ -1,0 +1,4 @@
+build*/
+*.root
+*.bin
+*.ps

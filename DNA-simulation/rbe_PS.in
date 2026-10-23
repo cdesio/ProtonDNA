@@ -1,0 +1,7 @@
+/control/verbose 1
+/run/verbose 0
+/run/numberOfThreads 1
+/det/setSize 300 nm
+/det/dkill 9 nm
+/run/initialize
+/run/printProgress 100

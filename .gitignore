@@ -1,0 +1,15 @@
+**/build*/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+*.root
+*.ps
+*.log
+*.rndm
+*.so
+*.dylib
+*.o
+*.a
+.venv/
+outputs/
+dist/

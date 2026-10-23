@@ -1,0 +1,24 @@
+/control/verbose 1
+/det/setWorldHalfSize 10 cm
+# Grid is centred on z; entrance face is z=0.
+/det/setVoxelSize 300 nm
+/det/setGrid 8 8 50
+/det/setMaxStep 30 nm
+/det/checkOverlaps false
+/tracking/killSecondaries false
+/tracking/recordSecondaries true
+/primary/particle proton
+/primary/energy 150 MeV
+# Start 10 um before the grid front; avoid voxel-column boundaries.
+/primary/position 0.15 0.15 -10 um
+/primary/direction 0 0 1
+/run/initialize
+/run/printProgress 100
+/vis/open OGL
+/vis/drawVolume voxel_block
+/vis/viewer/set/viewpointThetaPhi 90 0
+/vis/scene/add/axes 0 0 0 2.4 um
+/vis/viewer/zoom 1.3
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 1
+/run/beamOn 1
